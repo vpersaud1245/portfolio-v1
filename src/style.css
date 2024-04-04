@@ -7,6 +7,11 @@
   font-family: sf-mono;
   src: url("./fonts/SFMono-Regular.otf");
 }
+
+@font-face {
+  font-family: calibre;
+  src: url("./fonts//Calibre-Regular.otf");
+}
 :root {
   --navy: #0a192f;
   --light-navy: #112240;
@@ -17,6 +22,7 @@
   --white: #e6f1ff;
   --green: #64ffda;
   --mono-font: sf-mono, sans-serif;
+  --calibre: calibre, sans-serif;
 }
 
 *,
@@ -31,6 +37,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: var(--navy);
+  height: 100vh;
 }
 img,
 picture,
@@ -60,14 +67,23 @@ h6 {
   isolation: isolate;
 }
 
+/* ----- NAV ----- */
+
 .nav {
   display: flex;
+  width: 100vw;
   justify-content: space-between;
   padding: 0 50px;
   height: 100px;
   align-items: center;
   font-family: var(--mono-font);
-  font-size: 12px;
+  font-size: 13px;
+  position: fixed;
+  top: 0;
+}
+
+.nav__logo {
+  color: var(--lightest-slate);
 }
 
 .nav__nav-bar {
@@ -96,4 +112,53 @@ h6 {
   color: var(--green);
   border: 1px solid var(--green);
   border-radius: 5px;
+}
+
+/* ----- HERO ----- */
+
+.main__hero {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.hero__socials {
+  min-width: 150px;
+}
+
+.hero__content {
+  padding: 150px 100px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__content--intro {
+  color: var(--green);
+  font-family: var(--mono-font);
+  font-size: 16px;
+}
+
+.hero__content--name {
+  font-size: 80px;
+  font-family: var(--calibre);
+  color: var(--lightest-slate);
+}
+
+.hero__content--mission {
+  font-size: 80px;
+  margin-top: -30px;
+  font-family: var(--calibre);
+  color: var(--light-slate);
+}
+
+.hero__content--summary {
+  width: 60%;
+  font-size: 20px;
+  color: var(--light-slate);
+}
+
+.hero__email {
+  min-width: 150px;
+  margin-left: auto;
 }
