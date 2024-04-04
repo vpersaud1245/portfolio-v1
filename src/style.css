@@ -67,6 +67,7 @@ h6 {
   height: 100px;
   align-items: center;
   font-family: var(--mono-font);
+  font-size: 12px;
 }
 
 .nav__nav-bar {
@@ -90,4 +91,9 @@ h6 {
 
 .nav__resume-btn {
   margin-left: 10px;
+  padding: 0 15px;
+  background-color: transparent;
+  color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 5px;
 }
