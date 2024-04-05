@@ -30,7 +30,17 @@
     </nav>
     <main class="main">
       <section class="main__hero">
-        <div class="hero__socials"></div>
+        <div class="hero__socials">
+          <img
+            class="hero__socials--icon"
+            src="<%=require('./resources/github-icon.svg')%>"
+          />
+          <img
+            class="hero__socials--icon"
+            src="<%=require('./resources/linkedin-icon.svg')%>"
+          />
+          <div class="hero__socials--vl vl"></div>
+        </div>
         <div class="hero__content">
           <p class="hero__content--intro">Hi, my name is</p>
           <h1 class="hero__content--name">Vishwanauth Persaud.</h1>
@@ -42,7 +52,10 @@
             corporis esse ratione cumque?
           </p>
         </div>
-        <div class="hero__email"></div>
+        <div class="hero__email">
+          <p class="hero__email--email">vpersaud1245@gmail.com</p>
+          <div class="hero__email--vl vl"></div>
+        </div>
       </section>
     </main>
   </body>
