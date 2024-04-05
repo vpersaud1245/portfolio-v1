@@ -106,7 +106,7 @@ h6 {
 }
 
 .nav__resume-btn {
-  margin-left: 10px;
+  margin-left: 15px;
   padding: 0 15px;
   background-color: transparent;
   color: var(--green);
@@ -124,13 +124,24 @@ h6 {
 
 .hero__socials {
   min-width: 150px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero__socials--icon {
+  width: 20px;
+  height: auto;
 }
 
 .hero__content {
-  padding: 150px 100px;
+  padding: 0 100px;
   width: 90%;
   display: flex;
   flex-direction: column;
+  align-self: center;
 }
 
 .hero__content--intro {
@@ -156,9 +167,26 @@ h6 {
   width: 60%;
   font-size: 20px;
   color: var(--light-slate);
+  font-family: var(--calibre);
 }
 
 .hero__email {
   min-width: 150px;
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero__email--email {
+  font-family: var(--mono-font);
+  color: var(--light-slate);
+  transform: translateY(-100px) rotate(90deg);
+  font-size: 13px;
+}
+
+.vl {
+  border-left: 1px solid var(--light-slate);
+  height: 100px;
 }
