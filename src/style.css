@@ -89,7 +89,14 @@ h6 {
 
 .nav__logo--logo-icon {
   height: auto;
-  width: 85px;
+  width: 40px;
+
+  transition: transform 300ms;
+}
+
+.nav__logo--logo-icon:hover {
+  transform: translate(-5px, -5px);
+  cursor: pointer;
 }
 
 .nav__nav-bar {
