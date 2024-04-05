@@ -83,7 +83,13 @@ h6 {
 }
 
 .nav__logo {
-  color: var(--lightest-slate);
+  display: flex;
+  justify-content: center;
+}
+
+.nav__logo--logo-icon {
+  height: auto;
+  width: 85px;
 }
 
 .nav__nav-bar {
