@@ -12,6 +12,12 @@
   font-family: calibre;
   src: url("./fonts//Calibre-Regular.otf");
 }
+
+@font-face {
+  font-family: calibre;
+  src: url("./fonts/Calibre-Bold.otf");
+  font-weight: bold;
+}
 :root {
   --navy: #0a192f;
   --dark-navy: #020c1b;
@@ -231,4 +237,37 @@ h6 {
   height: 100vh;
   width: 100vw;
   display: flex;
+  justify-content: center;
+}
+
+.about-me__container {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+}
+
+.about-me__content--title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section__number {
+  color: var(--green);
+  font-family: var(--mono-font);
+  font-size: 20px;
+}
+
+.section__name {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--lightest-slate);
+  font-family: var(--calibre);
+  margin-bottom: 5px;
+}
+
+.line {
+  width: 30%;
+  border: 0.5px solid var(--lightest-navy);
+  margin-left: 5px;
 }
