@@ -92,19 +92,30 @@
               <h3 class="technologies__heading">
                 Here are a few technologies I've been working with recently:
               </h3>
-              <ul class="about-me__technologies--list"></ul>
-              <ul class="about-me__technologies--list"></ul>
+              <div class="about-me__tech-list-container">
+                <ul class="about-me__technologies--list">
+                  <li class="technologies-list__item">
+                    Javascript &#40;ES6+&#41;
+                  </li>
+                  <li class="technologies-list__item">HTML 5</li>
+                  <li class="technologies-list__item">CSS</li>
+                </ul>
+                <ul class="about-me__technologies--list">
+                  <li class="technologies-list__item">Node Js</li>
+                  <li class="technologies-list__item">React</li>
+                  <li class="technologies-list__item">Mongo</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="about-me__profile-pic">
+            <div class="profile-pic__filter"></div>
             <div class="profile-pic__outline"></div>
             <img
               class="profile-pic__img"
               src="<%=require('./resources/headshot.png')%>"
               alt=""
             />
-
-            <div class="profile-pic__filter"></div>
           </div>
         </div>
       </section>

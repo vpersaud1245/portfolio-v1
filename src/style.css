@@ -259,7 +259,7 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 60%;
+  width: 70%;
 }
 
 .about-me__content--title {
@@ -295,9 +295,45 @@ h6 {
   font-family: var(--calibre);
 }
 
+.technologies__heading {
+  font-family: var(--calibre);
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: normal;
+}
+
+.about-me__tech-list-container {
+  display: flex;
+}
+
+.about-me__technologies--list {
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+}
+
+.technologies-list__item {
+  font-size: 12px;
+  color: var(--text-color);
+  font-family: var(--mono-font);
+}
+
+.technologies-list__item::before {
+  content: "";
+  border-color: transparent var(--green);
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 12.5px;
+  position: relative;
+}
+
 .about-me__profile-pic {
   position: relative;
-  width: 40%;
+  width: 50%;
 }
 
 .profile-pic__img {
@@ -309,18 +345,24 @@ h6 {
   transition: transform 300ms;
 }
 
-.about-me__profile-pic:hover .profile-pic__img {
+/* .about-me__profile-pic:hover .profile-pic__img {
+  transform: translate(-5px, -5px);
+  filter: contrast(1);
+} */
+
+.profile-pic__filter:hover + .profile-pic__outline + .profile-pic__img {
   transform: translate(-5px, -5px);
   filter: contrast(1);
 }
-.about-me__profile-pic:hover .profile-pic__filter {
+.profile-pic__filter:hover {
   opacity: 0;
 }
-.about-me__profile-pic:hover .profile-pic__outline {
+.profile-pic__filter:hover + .profile-pic__outline {
   transform: translate(5px, 5px);
 }
 
 .profile-pic__filter {
+  z-index: 1;
   content: "";
   top: 84px;
   mix-blend-mode: multiply;
