@@ -259,6 +259,7 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 50%;
 }
 
 .about-me__content--title {
@@ -294,9 +295,26 @@ h6 {
   font-family: var(--calibre);
 }
 
+.about-me__profile-pic {
+  position: relative;
+  width: 50%;
+}
+
 .profile-pic__img {
-  margin-top: 83px;
-  height: auto;
-  width: 1750px;
+  margin-top: 85px;
   border-radius: 5px;
+  height: 300px;
+  width: 300px;
+}
+
+.about-me__profile-pic::before {
+  z-index: -1;
+  top: 100px;
+  left: 15px;
+  height: 300px;
+  width: 300px;
+  content: "";
+  border: 2px solid var(--green);
+  border-radius: 5px;
+  position: absolute;
 }
