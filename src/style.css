@@ -147,11 +147,14 @@ h6 {
 .main__hero {
   height: 100vh;
   width: 100vw;
+  position: relative;
   display: flex;
 }
 
 .hero__socials {
-  min-width: 150px;
+  position: fixed;
+  bottom: 0;
+  width: 150px;
   gap: 20px;
   display: flex;
   flex-direction: column;
@@ -165,6 +168,7 @@ h6 {
 }
 
 .hero__content {
+  margin-left: 150px;
   padding: 0 100px;
   width: 90%;
   display: flex;
@@ -199,7 +203,10 @@ h6 {
 }
 
 .hero__email {
-  min-width: 150px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 150px;
   margin-left: auto;
   display: flex;
   flex-direction: column;
@@ -217,4 +224,12 @@ h6 {
 .vl {
   border-left: 1px solid var(--light-slate);
   height: 100px;
+}
+
+/* ----- ABOUT ME ----- */
+
+.main__about-me {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
 }
