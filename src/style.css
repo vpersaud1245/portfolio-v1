@@ -252,14 +252,14 @@ h6 {
   display: flex;
   width: 60%;
   justify-content: center;
-  gap: 75px;
+  gap: 50px;
 }
 
 .about-me__content {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 50%;
+  width: 60%;
 }
 
 .about-me__content--title {
@@ -297,7 +297,7 @@ h6 {
 
 .about-me__profile-pic {
   position: relative;
-  width: 50%;
+  width: 40%;
 }
 
 .profile-pic__img {
@@ -305,9 +305,35 @@ h6 {
   border-radius: 5px;
   height: 300px;
   width: 300px;
+  filter: grayscale(100%) contrast(1);
+  transition: transform 300ms;
 }
 
-.about-me__profile-pic::before {
+.about-me__profile-pic:hover .profile-pic__img {
+  transform: translate(-5px, -5px);
+  filter: contrast(1);
+}
+.about-me__profile-pic:hover .profile-pic__filter {
+  opacity: 0;
+}
+.about-me__profile-pic:hover .profile-pic__outline {
+  transform: translate(5px, 5px);
+}
+
+.profile-pic__filter {
+  content: "";
+  top: 84px;
+  mix-blend-mode: multiply;
+  height: 300px;
+  width: 300px;
+  content: "";
+  background-color: var(--green);
+  border-radius: 5px;
+  position: absolute;
+  transition: opacity 300ms;
+}
+
+.profile-pic__outline {
   z-index: -1;
   top: 100px;
   left: 15px;
@@ -317,4 +343,5 @@ h6 {
   border: 2px solid var(--green);
   border-radius: 5px;
   position: absolute;
+  transition: transform 300ms;
 }
