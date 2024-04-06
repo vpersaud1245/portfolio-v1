@@ -15,14 +15,14 @@
 
 @font-face {
   font-family: calibre;
-  src: url("./fonts/Calibre-Bold.otf");
-  font-weight: bolder;
+  src: url("./fonts/Calibre-Semibold.otf");
+  font-weight: bold;
 }
 
 @font-face {
   font-family: calibre;
-  src: url("./fonts/Calibre-Semibold.otf");
-  font-weight: bold;
+  src: url("./fonts/Calibre-Bold.otf");
+  font-weight: 900;
 }
 
 :root {
