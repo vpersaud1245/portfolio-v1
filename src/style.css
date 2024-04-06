@@ -284,7 +284,7 @@ h6 {
 }
 
 .line {
-  width: 250px;
+  width: 275px;
   border: 0.5px solid var(--lightest-navy);
   margin-left: 5px;
 }
@@ -390,8 +390,8 @@ h6 {
   width: 100vw;
 }
 
-.experience__content {
-  width: 50%;
+.experience__container {
+  width: 40%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -402,5 +402,19 @@ h6 {
   align-items: center;
   gap: 10px;
   margin-bottom: 15px;
-  align-self: center;
+}
+
+.experience__content {
+  display: flex;
+}
+
+.content__experience-list {
+  width: 30%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content__experience-summary {
+  width: 70%;
 }
