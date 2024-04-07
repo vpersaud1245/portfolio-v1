@@ -395,7 +395,7 @@ h6 {
 
 .experience__container {
   width: 45%;
-  margin: 0 auto;
+  margin: 10% auto 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -426,10 +426,11 @@ h6 {
   background-color: var(--green);
   height: 40px;
   position: absolute;
-  left: -2.5px;
-  width: 3px;
+  left: -2.6px;
+  width: 3.2px;
   border-radius: 2px;
   transition: transform 300ms;
+  z-index: 1;
 }
 
 .content__experience-list::after {
@@ -437,9 +438,9 @@ h6 {
   background-color: var(--light-navy);
   height: 95%;
   position: absolute;
-  left: -1.8px;
+  left: -2.2px;
   top: 0px;
-  width: 1.5px;
+  width: 2px;
   z-index: -1;
   border-radius: 2px;
 }
