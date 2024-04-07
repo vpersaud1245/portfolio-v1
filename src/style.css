@@ -404,20 +404,63 @@ h6 {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .experience__content {
   display: flex;
+  gap: 30px;
 }
 
 .content__experience-list {
-  width: 30%;
+  width: 20%;
+  padding-left: 10px;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: relative;
+}
+
+.content__experience-list--focus-bar {
+  content: "";
+  background-color: var(--green);
+  height: 40px;
+  position: absolute;
+  left: -2.5px;
+  width: 3px;
+  border-radius: 2px;
+  transition: transform 300ms;
+}
+
+.content__experience-list::after {
+  content: "";
+  background-color: var(--light-navy);
+  height: 95%;
+  position: absolute;
+  left: -1.8px;
+  top: 0px;
+  width: 1.5px;
+  z-index: -1;
+  border-radius: 2px;
+}
+
+.experience-list__item {
+  position: relative;
+  font-family: var(--mono-font);
+  color: var(--text-color);
+  font-size: 13px;
+  padding: 10px 20px;
+}
+
+.experience-list__item.focus {
+  color: var(--green);
+}
+
+.experience-list__item:hover {
+  background-color: var(--lightest-navy);
+  cursor: pointer;
 }
 
 .content__experience-summary {
-  width: 70%;
+  width: 80%;
 }
