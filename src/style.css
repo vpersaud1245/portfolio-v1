@@ -545,6 +545,15 @@ h6 {
   border-radius: 5px;
 }
 
+.project__img--filter {
+  background-color: var(--green);
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+  mix-blend-mode: multiply;
+}
+
 .project__text {
   width: 50%;
   padding: 30px 0;
