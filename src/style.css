@@ -558,6 +558,11 @@ h6 {
   height: 100%;
   border-radius: 5px;
   mix-blend-mode: multiply;
+  transition: opacity 300ms;
+}
+
+.project__img--filter:hover {
+  opacity: 0;
 }
 
 .project__img--filter-inverted {
