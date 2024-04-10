@@ -626,20 +626,26 @@ h6 {
 
 .project__links {
   display: flex;
-  gap: 20px;
+  gap: 5px;
   justify-content: flex-end;
   margin-top: 10px;
+  align-items: center;
 }
 
-.project__links--github {
+.project__links * {
   height: 25px;
   width: 25px;
 }
 
-.project__links--github:hover {
+.project__links--github {
+  height: 18px;
+  width: 18px;
+}
+
+.project__links *:hover {
   cursor: pointer;
 }
 
-.project__links--github:hover path {
+.project__links *:hover path {
   fill: var(--green);
 }
