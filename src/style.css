@@ -208,6 +208,20 @@ h6 {
 .hero__socials--icon {
   width: 20px;
   height: auto;
+  transition: transform 300ms;
+}
+
+.hero__socials--icon:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.hero__socials--icon-git:hover path {
+  fill: var(--green);
+}
+
+.hero__socials--icon-linkdn:hover * {
+  stroke: var(--green);
 }
 
 .hero__content {
@@ -262,6 +276,13 @@ h6 {
   color: var(--light-slate);
   transform: translateY(-100px) rotate(90deg);
   font-size: 13px;
+}
+
+.hero__email--email:hover {
+  transition: transform 300ms;
+  color: var(--green);
+  transform: translateY(-105px) rotate(90deg);
+  cursor: pointer;
 }
 
 .vl {
