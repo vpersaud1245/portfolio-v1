@@ -666,3 +666,23 @@ h6 {
   margin: auto;
   height: 100%;
 }
+
+.contact__title {
+  font-family: var(--mono-font);
+  color: var(--green);
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.contact__call-to-action {
+  font-size: 60px;
+  font-family: var(--calibre);
+  color: var(--lightest-slate);
+}
+
+.contact__info {
+  color: var(--text-color);
+  font-family: var(--calibre);
+  font-size: 18px;
+  text-align: center;
+}
