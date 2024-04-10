@@ -134,8 +134,17 @@ h6 {
 .nav-bar__item {
   display: flex;
   justify-content: space-evenly;
-  padding: 10px;
+  padding: 5px 10px;
   gap: 10px;
+  font-size: 12px;
+}
+
+.nav-bar__item:hover {
+  cursor: pointer;
+}
+
+.nav-bar__item:hover > .nav-bar__item--label {
+  color: var(--green);
 }
 
 .nav-bar__item--number {
