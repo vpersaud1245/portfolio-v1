@@ -10,20 +10,27 @@ import "./style.css";
 
 // HEADER SCROLL EFFECT
 const header = document.querySelector(".header");
-// Initial state
+
 let scrollPos = 0;
-// adding scroll event
+
 function moveHeader() {
-  if (document.body.getBoundingClientRect().top > scrollPos) {
-    // scrolling up
-    header.style.transform = "translateY(0px)";
-    header.style.transition = "transform 300ms ease-out";
-  } else {
-    // scrolling down
-    header.style.transform = "translateY(-200px)";
-    header.style.transition = "transform 500ms ease-in";
+  // If at page top dont make header slide up immedietly
+  if (window.scrollY > 80) {
+    header.classList.remove("top");
+    if (document.body.getBoundingClientRect().top > scrollPos) {
+      // scrolling up
+      header.style.transform = "translateY(0px)";
+      header.style.transition = "transform 300ms ease-out";
+    } else {
+      // scrolling down
+      header.style.transform = "translateY(-200px)";
+      header.style.transition = "transform 500ms ease-in";
+    }
   }
   scrollPos = document.body.getBoundingClientRect().top;
+  if (window.scrollY < 50) {
+    header.classList.add("top");
+  }
 }
 
 window.addEventListener("scroll", moveHeader);

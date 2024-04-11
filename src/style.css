@@ -102,6 +102,10 @@ h6 {
   transition: transform 300ms ease-in-out;
 }
 
+.header.top {
+  box-shadow: none;
+}
+
 .header__logo {
   display: flex;
   justify-content: center;
