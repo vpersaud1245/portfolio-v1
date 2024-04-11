@@ -629,6 +629,7 @@ h6 {
   width: 50%;
   position: relative;
   z-index: -1;
+  height: auto;
   border-radius: 5px;
 }
 
@@ -713,14 +714,19 @@ h6 {
   align-items: center;
 }
 
-.project__links * {
-  height: 25px;
-  width: 25px;
+.project__links > .project__links--link {
+  height: fit-content;
+  width: fit-content;
 }
 
 .project__links--github {
   height: 18px;
   width: 18px;
+}
+
+.project__links--live {
+  height: 25px;
+  width: 25px;
 }
 
 .project__links *:hover {
