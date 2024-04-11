@@ -752,6 +752,7 @@ h6 {
   align-items: center;
   margin: auto;
   height: 100%;
+  position: relative;
 }
 
 .contact__title {
@@ -772,4 +773,33 @@ h6 {
   font-family: var(--calibre);
   font-size: 18px;
   text-align: center;
+}
+
+.contact__btn {
+  margin-top: 30px;
+  background-color: var(--navy);
+  border: 1px solid var(--green);
+  border-radius: 5px;
+  padding: 15px 20px;
+  transition: transform 300ms;
+  text-decoration: none;
+  color: var(--green);
+  font-family: var(--mono-font);
+  font-size: 14px;
+}
+
+.contact__btn:hover {
+  transform: translate(-5px, -5px);
+  cursor: pointer;
+}
+
+.contact__wrapper::after {
+  content: "";
+  background-color: var(--green);
+  position: relative;
+  height: 53px;
+  width: 120px;
+  top: -53.5px;
+  border-radius: 5px;
+  z-index: -1;
 }
