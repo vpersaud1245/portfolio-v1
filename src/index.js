@@ -25,3 +25,24 @@ window.addEventListener("scroll", () => {
   }
   scrollPos = document.body.getBoundingClientRect().top;
 });
+
+const experienceListItems = document.querySelectorAll(".experience-list__item");
+let currentFocusedItem = document.querySelector(".experience-list__item.focus");
+const focusBar = document.querySelector(".content__experience-list--focus-bar");
+
+experienceListItems.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    if (item === currentFocusedItem) return;
+    focusBar.classList.remove(focusBar.classList[1]);
+    currentFocusedItem.classList.remove("focus");
+    item.classList.add("focus");
+    currentFocusedItem = item;
+    if (item.id === "first_item") {
+      focusBar.classList.add("first-item");
+    } else if (item.id === "second_item") {
+      focusBar.classList.add("second-item");
+    } else if (item.id === "third_item") {
+      focusBar.classList.add("third-item");
+    }
+  });
+});
