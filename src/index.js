@@ -107,7 +107,6 @@ const navBarLinks = document.querySelectorAll(".nav-bar__link");
 
 navBarLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    console.log(aside.classList);
     if (aside.classList[1] === "open") {
       aside.classList.remove("open");
     }
