@@ -803,3 +803,28 @@ h6 {
   border-radius: 5px;
   z-index: -1;
 }
+
+@media (width <= 1000px) {
+  .main__hero {
+    justify-content: center;
+  }
+  .hero__socials {
+    display: none;
+  }
+
+  .hero__content {
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero__content--name,
+  .hero__content--mission {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .hero__content--summary {
+    width: 100%;
+    font-size: 18px;
+  }
+}
