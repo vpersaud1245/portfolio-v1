@@ -834,7 +834,7 @@ h6 {
   }
 
   .line {
-    flex-grow: 1;
+    width: 50%;
   }
 
   .about-me__container {
@@ -847,6 +847,7 @@ h6 {
 
   .about-me__profile-pic {
     margin: 0 auto;
+    min-width: 300px;
   }
 
   .experience__container {
@@ -881,5 +882,35 @@ h6 {
     background: none;
     box-shadow: none;
     right: 0;
+  }
+
+  .contact__call-to-action {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media (width < 650px) {
+  .experience-list__item {
+    text-align: center;
+    font-size: 8px;
+  }
+
+  .projects__wrapper {
+    width: 90%;
+  }
+
+  .content__experience-list--focus-bar.second-item {
+    transform: translateY(104%);
+  }
+
+  .content__experience-list--focus-bar {
+    height: 37px;
+  }
+}
+
+@media (width < 500px) {
+  .contact__call-to-action {
+    font-size: 30px;
   }
 }
