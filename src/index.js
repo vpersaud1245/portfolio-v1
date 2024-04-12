@@ -2,10 +2,7 @@ import "./style.css";
 
 /**
  * TODO
- * Make header slide up on scroll down and slide down on scroll up
- * Add sliding animation to experience section
- * Add links to socials and email
- * Add slide in underlines
+ * Add small screen nav bar
  */
 
 // HEADER SCROLL EFFECT
@@ -92,6 +89,50 @@ Aircraft Maintenance Technician
   Collaborated with cross-functional teams to coordinate maintenance schedules and minimize aircraft downtime.
 </li>
 </ul>`;
+
+// ASIDE OPEN AND CLOSE
+const asideMenuBtn = document.querySelector(".header__menu-btn");
+const aside = document.querySelector(".nav__media");
+const asideCloseBtn = document.querySelector(".aside-close-btn");
+asideMenuBtn.addEventListener("click", () => {
+  aside.classList.add("open");
+});
+
+asideCloseBtn.addEventListener("click", () => {
+  aside.style.transition = "transform 300ms";
+  aside.classList.remove("open");
+});
+
+const navBarLinks = document.querySelectorAll(".nav-bar__link");
+
+navBarLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    console.log(aside.classList);
+    if (aside.classList[1] === "open") {
+      aside.classList.remove("open");
+    }
+  });
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth < 700) {
+    document.querySelector("#normal-header").style.display = "none";
+    document.querySelector("#media-header").style.display = "flex";
+  } else {
+    document.querySelector("#normal-header").style.display = "flex";
+    document.querySelector("#media-header").style.display = "none";
+  }
+});
+
+window.addEventListener("load", () => {
+  if (window.innerWidth < 700) {
+    document.querySelector("#normal-header").style.display = "none";
+    document.querySelector("#media-header").style.display = "flex";
+  } else {
+    document.querySelector("#normal-header").style.display = "flex";
+    document.querySelector("#media-header").style.display = "none";
+  }
+});
 
 // EXPERIENCE BAR MOVING EFFECT
 const experienceListItems = document.querySelectorAll(".experience-list__item");

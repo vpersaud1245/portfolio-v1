@@ -7,7 +7,48 @@
     <title><%=htmlWebpackPlugin.options.title%></title>
   </head>
   <body>
-    <nav class="header">
+    <aside class="nav__media">
+      <img class="aside-close-btn"src="<%=require('./resources/cancel.svg')%>" alt="">
+        <a class="nav-bar__link" href="#main__about-me">
+          <div class="nav-bar__item">
+            <div class="nav-bar__item--number">01.</div>
+            <div class="nav-bar__item--label">About</div>
+          </div>
+        </a>
+        <a class="nav-bar__link" href="#main__experience">
+          <div class="nav-bar__item">
+            <div class="nav-bar__item--number">02.</div>
+            <div class="nav-bar__item--label">Experience</div>
+          </div>
+        </a>
+        <a class="nav-bar__link" href="#main__projects">
+          <div class="nav-bar__item">
+            <div class="nav-bar__item--number">03.</div>
+            <div class="nav-bar__item--label">Work</div>
+          </div>
+        </a>
+        <a class="nav-bar__link" href="#main__contact">
+          <div class="nav-bar__item">
+            <div class="nav-bar__item--number">04.</div>
+            <div class="nav-bar__item--label">Contact</div>
+          </div>
+        </a>
+        <button class="nav-bar__resume-btn">Resume</button>
+    </aside>
+    <nav id="media-header" class="header">
+      <div class="header__logo">
+        <a href="">
+          <img
+            class="header__logo--logo-icon"
+            src="<%=require('./resources/logo.svg')%>"
+            alt=""
+          />
+        </a>
+        <div id="hexagon"></div>
+      </div>
+      <img class="header__menu-btn" src="<%=require('./resources/menu.svg')%>" alt="">
+    </nav>
+    <nav id="normal-header" class="header">
       <div class="header__logo">
         <a href="">
           <img

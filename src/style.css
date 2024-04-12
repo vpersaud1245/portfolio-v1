@@ -84,7 +84,75 @@ h6 {
   isolation: isolate;
 }
 
+/* ----- MEDIA NAV ----- */
+
+#media-header {
+  display: none;
+  padding: 0 30px;
+}
+
+.header__menu-btn {
+  height: 50px;
+  width: 50px;
+}
+
+.header__menu-btn:hover {
+  cursor: pointer;
+}
+
+.nav__media {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  transform: translateX(133%);
+  top: 0;
+  height: 100vh;
+  z-index: 3;
+  width: 75%;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-navy);
+  gap: 10px;
+}
+
+.nav__media.open {
+  transform: translateX(35%);
+  transition: transform 300ms;
+}
+
+.aside-close-btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.nav__media > .nav-bar__link > .nav-bar__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  font-size: 16px;
+  font-family: var(--mono-font);
+}
+
+.nav__media > .nav-bar__resume-btn {
+  margin: 0;
+  padding: 15px 50px;
+  margin-top: 30px;
+  background-color: var(--light-navy);
+  font-family: var(--mono-font);
+}
+
 /* ----- NAV ----- */
+
+#normal-header {
+  display: none;
+}
 
 .header {
   display: flex;
