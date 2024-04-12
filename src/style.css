@@ -335,11 +335,11 @@ h6 {
 .section__number {
   color: var(--green);
   font-family: var(--mono-font);
-  font-size: 20px;
+  font-size: clamp(10px, 15px, 20px);
 }
 
 .section__name {
-  font-size: 30px;
+  font-size: clamp(10px, 20px, 30px);
   font-weight: bold;
   color: var(--lightest-slate);
   font-family: var(--calibre);
@@ -402,7 +402,7 @@ h6 {
 .profile-pic__img {
   border-radius: 5px;
   height: 300px;
-  width: 300px;
+  min-width: 300px;
   filter: grayscale(100%) contrast(1);
   transition: transform 300ms;
 }
@@ -827,5 +827,59 @@ h6 {
   .hero__content--summary {
     width: 100%;
     font-size: 18px;
+  }
+
+  .about-me__wrapper {
+    width: 90%;
+  }
+
+  .line {
+    flex-grow: 1;
+  }
+
+  .about-me__container {
+    flex-direction: column;
+  }
+
+  .about-me__content {
+    width: 100%;
+  }
+
+  .about-me__profile-pic {
+    margin: 0 auto;
+  }
+
+  .experience__container {
+    width: 85%;
+  }
+
+  .project__img {
+    width: 100%;
+    border: none;
+  }
+
+  .project__img--filter {
+    display: none;
+  }
+
+  .project__text {
+    width: 100%;
+    position: absolute;
+    align-items: flex-start;
+    height: 100%;
+    padding: 0 15px;
+    justify-content: center;
+    background: var(--navy);
+    border-radius: 5px;
+    opacity: 90%;
+  }
+
+  .project__description {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    right: 0;
   }
 }
