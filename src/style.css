@@ -230,8 +230,8 @@ h6 {
 }
 
 .hero__content {
-  margin-left: 150px;
-  padding: 0 50px;
+  margin-left: 0 auto;
+  padding: 0 200px;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -245,20 +245,20 @@ h6 {
 }
 
 .hero__content--name {
-  font-size: 80px;
+  font-size: clamp(40px, 6vw, 80px);
   font-family: var(--calibre);
   color: var(--lightest-slate);
 }
 
 .hero__content--mission {
-  font-size: 80px;
+  font-size: clamp(40px, 5vw, 80px);
   margin-top: -30px;
   font-family: var(--calibre);
   color: var(--light-slate);
 }
 
 .hero__content--summary {
-  width: 60%;
+  width: 600px;
   font-size: 20px;
   color: var(--text-color);
   font-family: var(--calibre);
@@ -808,18 +808,19 @@ h6 {
   .main__hero {
     justify-content: center;
   }
-  .hero__socials {
+  .hero__socials,
+  .hero__email {
     display: none;
   }
 
   .hero__content {
     margin: 0;
     padding: 0;
+    width: 70%;
   }
 
   .hero__content--name,
   .hero__content--mission {
-    font-size: 40px;
     margin: 0;
   }
 
