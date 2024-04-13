@@ -519,6 +519,7 @@ h6 {
 .main__experience {
   height: 100vh;
   width: 100vw;
+  margin-bottom: 100px;
 }
 
 .experience__container {
@@ -661,7 +662,6 @@ h6 {
 .main__projects {
   width: 100vw;
   min-height: 100vh;
-  padding-top: 100px;
 }
 
 .projects__wrapper {
