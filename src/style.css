@@ -926,6 +926,10 @@ h6 {
     width: 85%;
   }
 
+  .main__projects {
+    padding: 0;
+  }
+
   .project__img {
     width: 100%;
     border: none;

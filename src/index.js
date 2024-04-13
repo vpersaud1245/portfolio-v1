@@ -110,6 +110,8 @@ navBarLinks.forEach((link) => {
     if (aside.classList[1] === "open") {
       aside.classList.remove("open");
     }
+    header.style.transform = "translateY(-200px)";
+    header.style.transition = "transform 500ms ease-in";
   });
 });
 
@@ -175,4 +177,12 @@ experienceListItems.forEach((item) => {
       }, 200);
     }
   });
+});
+
+// SCROLL INTO VIEW
+
+const sections = document.querySelectorAll("section");
+
+sections.forEach((section) => {
+  section.scrollIntoView({ inline: "center" });
 });
