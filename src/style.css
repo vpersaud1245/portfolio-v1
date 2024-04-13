@@ -992,6 +992,10 @@ h6 {
   .content__experience-list::after {
     display: none;
   }
+
+  .content__experience-summary {
+    min-height: 700px;
+  }
 }
 
 @media (width < 500px) {
