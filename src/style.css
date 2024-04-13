@@ -918,6 +918,10 @@ h6 {
     min-width: 300px;
   }
 
+  .profile-pic__img {
+    filter: none;
+  }
+
   .experience__container {
     width: 85%;
   }
@@ -927,7 +931,8 @@ h6 {
     border: none;
   }
 
-  .project__img--filter {
+  .project__img--filter,
+  .profile-pic__filter {
     display: none;
   }
 
