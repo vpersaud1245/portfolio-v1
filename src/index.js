@@ -126,6 +126,7 @@ window.addEventListener("resize", () => {
 });
 
 window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
   if (window.innerWidth < 700) {
     document.querySelector("#normal-header").style.display = "none";
     document.querySelector("#media-header").style.display = "flex";
@@ -179,10 +180,11 @@ experienceListItems.forEach((item) => {
   });
 });
 
-// SCROLL INTO VIEW
-
+// SECTION SCROLL INTO VIEW
 const sections = document.querySelectorAll("section");
 
 sections.forEach((section) => {
   section.scrollIntoView({ inline: "center" });
 });
+
+// WINDOW SCROLL TO TOP ON LOAD
